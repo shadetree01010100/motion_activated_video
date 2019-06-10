@@ -1,0 +1,7 @@
+{
+  "nio/Example": {
+    "language": "Python",
+    "from_python": "example_bock.Example",
+    "url": "git://github.com/<organization>/<repo>[@<tag>]"
+  }
+}
