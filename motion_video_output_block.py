@@ -10,18 +10,18 @@ from nio.properties import StringProperty, BoolProperty, VersionProperty, \
     IntProperty
 
 
-class MotionVideoOutput(GeneratorBlock):
+class MotionActivatedVideo(GeneratorBlock):
     """
     Open video source and output raw frames (numpy arrays)
     """
 
     frame_rate = IntProperty(title='Frames per second', default=10)
-    non_motion_timer = IntProperty(title='Release Frames', default=36)
-    min_motion_frames = IntProperty(title='Trigger Frames', default=12)
+    non_motion_timer = IntProperty(title='Release Frames', default=30)
+    min_motion_frames = IntProperty(title='Trigger Frames', default=10)
     min_area = IntProperty(title='Countour Area', default=500)
     delta_thresh = IntProperty(title='Delta Threshold', default=5)
 
-    version = VersionProperty("0.0.1")
+    version = VersionProperty('0.0.1')
 
     def __init__(self):
         super().__init__()
